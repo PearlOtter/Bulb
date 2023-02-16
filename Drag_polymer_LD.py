@@ -213,7 +213,7 @@ system.thermostat.set_langevin(kT = 0.0*kT, gamma = GAMMA_R,
                                seed = np.random.randint(1, 1000))
 system.integrator.run(5000)
 
-visualizer.run()
+# visualizer.run()
 system.thermostat.turn_off()
 
 R_g = system.analysis.calc_rg(chain_start = 0, number_of_chains = N_S, chain_length = n_pol_part)
